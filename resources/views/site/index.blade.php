@@ -43,6 +43,7 @@
                         <hr>
                         <button type="submit" name="completed_button" class="btn btn-success">Tamamlandı</button>
                         <button type="submit" name="uncompleted_button" class="btn btn-danger">Tamamlanmadı</button>
+                        <a href="/create-todo-item" class="btn btn-primary float-right">Yeni Görev Oluştur</a>
                         <hr>
                         @foreach($todo_items as $item)
                             <tr style="{{$item->deadline_passed == 1 ?'background-color:darkred;color:white;font-weight:500;':''}}">
